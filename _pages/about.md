@@ -8,9 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>We all have two lives, and the second starts when you realize you only have one.
-</p>
-    
+    <p>We all have two lives, and the second starts when you realize you only have one.</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
