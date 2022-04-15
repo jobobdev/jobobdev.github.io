@@ -1,6 +1,6 @@
 ---
 layout: about
-title: ABOUT
+title: about
 permalink: /
 subtitle: Jobobdev. Seoul. "Doer is the thinker."
 
