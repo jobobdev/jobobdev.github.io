@@ -3,6 +3,7 @@
  ******************************************************************************/
 
 // Typography
+@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@300&family=Gothic+A1:wght@300;500&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300;400&family=Overpass:ital,wght@0,500;1,500&display=swap");
 
 p,
 h1,
@@ -301,18 +302,19 @@ footer.sticky-bottom {
 
 .header-bar {
   border-bottom: 1px solid var(--global-divider-color);
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+  text-align: right;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  font-family: "Anek Bangla", sans-serif;
   h1 {
     color: var(--global-theme-color);
-    font-size: 5rem;
+    font-size: 2.25rem;
   }
 }
 
 .post-list {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding: 0;
   li {
     border-bottom: 1px solid var(--global-divider-color);

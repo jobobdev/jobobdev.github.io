@@ -11,15 +11,14 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website, dev, devOps, AI, deep learning # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: icon.jpg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://jobobdev.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -84,7 +83,7 @@ panelbear_analytics: # panelbear analytics site ID (format: XXXXXXXXX)
 # -----------------------------------------------------------------------------
 
 blog_name: Jobobdev's Blog # your blog must have a name for it to show up in the nav bar
-blog_description: Journey of a jobob strunggling to become a stronger jobob in dev.
+blog_description:
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -94,6 +93,8 @@ pagination:
 # Comments
 disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+
+future: true
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -258,7 +259,7 @@ jekyll-diagrams:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: false # enables google analytics
+enable_google_analytics: true # enables google analytics
 enable_panelbear_analytics: false # enables panelbear analytics
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
@@ -272,7 +273,7 @@ enable_navbar_social:
   false # enables displaying social links in the
   # navbar on the about page
 enable_project_categories:
-  true # enables categorization of projects into
+  false # enables categorization of projects into
   # multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 
