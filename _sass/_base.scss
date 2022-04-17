@@ -115,7 +115,9 @@ blockquote {
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.25rem;
+    text-align: justify;
     p {
       display: inline-block;
       margin: 0;
@@ -254,12 +256,15 @@ blockquote {
 
 .social {
   text-align: center;
+  position: fixed;
+
+  bottom: 1.6rem;
   .contact-icons {
     font-size: 1rem;
     a {
       i::before {
         color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+        transition-property: all 0.5s ease-in-out;
       }
       &:hover {
         i::before {
@@ -276,11 +281,12 @@ blockquote {
 // Footer
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
+  font-size: 0.6rem;
+  text-align: center;
   .container {
     color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
   a {
     color: var(--global-footer-link-color);
