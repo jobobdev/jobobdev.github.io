@@ -15,7 +15,7 @@ keywords: jekyll, jekyll-theme, academic-website, portfolio-website, dev, devOps
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: icon.jpg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://jobobdev.github.io # the base hostname & protocol for your site
+url: https://jobobdev.github.io/blog # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -44,7 +44,7 @@ max_width: 900px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: false # Include Open Graph meta tags in the HTML
 serve_schema_org: false # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
@@ -83,7 +83,7 @@ panelbear_analytics: # panelbear analytics site ID (format: XXXXXXXXX)
 
 blog_name: Jobobdev's Blog # your blog must have a name for it to show up in the nav bar
 blog_description:
-permalink: /blog/:year/:title/
+permalink: /post/:year/:title/
 
 # Pagination
 pagination:
@@ -194,9 +194,9 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: "/blog/:year/"
-    tag: "/blog/tag/:name/"
-    category: "/blog/category/:name/"
+    year: "/post/:year/"
+    tag: "/post/tag/:name/"
+    category: "/post/category/:name/"
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
