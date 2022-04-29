@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jobobdev | M1 유저를 위한 Jekyll로 깃블로그 열기</title>
+    <meta name="author" content="Jobobdev  " />
+    <meta name="description" content="deploy your personal github page with Jekyll" />
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website, dev, devOps, AI, deep learning" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="/assets/img/icon.PNG"/>
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://jobobdev.github.io/blog/blog/2022/gitblog-jekyll/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header --><header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="https://jobobdev.github.io/blog/">Jobobdev</a>
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/about">about</a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">blog</a>
+          </li>
+
+          <!-- Other pages -->
+
+          <!-- Toogle theme mode -->
+          <div class="toggle-container">
+            <a id="light-toggle">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+            </a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- _layouts/post.html -->
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">M1 유저를 위한 Jekyll로 깃블로그 열기</h1>
+    <p class="post-meta">
+      April 14, 2022</p>
+    <p class="post-tags">
+      <a href="/post/2022">
+        <i class="fas fa-calendar fa-sm"></i> 2022
+      </a>   ·   <a href="/post/tag/blog">
+        <i class="fas fa-hashtag fa-sm"></i> blog</a>
+        <a href="/post/tag/jekyll">
+        <i class="fas fa-hashtag fa-sm"></i> jekyll</a>
+        <a href="/post/tag/mac">
+        <i class="fas fa-hashtag fa-sm"></i> mac</a>
+        <a href="/post/tag/m1">
+        <i class="fas fa-hashtag fa-sm"></i> m1</a>
+        <a href="/post/tag/ruby">
+        <i class="fas fa-hashtag fa-sm"></i> ruby</a>
+          
+      ·   <a href="/post/category/learnings">
+        <i class="fas fa-tag fa-sm"></i> learnings</a>
+        
+    </p>
+  </header>
+
+  <article class="post-content"><p><span style=" font-family: 'Gothic A1', sans-serif;font-size: 25px; font-weight: 500;">[M1 유저를 위한 Jeklly Gitblog 열기!]</span></p>
+
+<p><span style="font-weight: 500;">M1 Mac 유저분들 중 Jekyll을 이용해 깃블로그를 처음 열고자 한다면 아래 준비사항을 미리 체크하자!</span><br><br>
+정보도 가이드도 없이 혼자 이것 저것 해보려다가 장장 열흘을 소모하며 깨달은 것들이니<br> 
+나처럼 M1 맥북도 처음, 개발도 처음, Github pages도 처음이라면 마음 급하게 먹지 말고<br>
+준비사항을 모두 완료한 후 진행해보도록 하자.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. MacOS를 최신으로 업데이트 하기. 업데이트 후 꼭 재부팅 먼저!!
+2. M1 유저의 경우 Terminal은 "Start with Roessta" 해제하기.
+2-1. Finder/Applications/ 경로의 terminal 앱에서 우클릭 후 get info를 통해 해제 가능..
+3. Xcode 설치 완료하기. (몇 시간이 걸릴지 모르는 고통스러운 과정이므로 인내심 필요! 미리 깔려있다면 Lucky.)
+</code></pre></div></div>
+
+<p>위 사항들이 모두 마무리 되었다면, 이제 순서대로 진행해보자.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Homebrew 설치
+2. Ruby 와 Jekyll 설치
+3. Jekyll theme fork하고 레포지토리 이름 바꾸기
+4. 블로그 호스팅
+</code></pre></div></div>
+
+<p style="font-weight:600; font-size: 1.2rem"><br><br>[STEP 1. Homebrew 설치하기]</p>
+<p>Terminal 앱을 켠후 아래 코드를 복사 붙여넣고 Enter를 누른다.
+Homebrew는 macOS용 패키지 관리자이다. <br>
+Homebrew를 통해 Appple 혹은 Linux 시스템에서 제공하지 않는 유용한 패키지를 다운받고 관리할 수 있다.</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">/bin/bash -c "$</span><span class="o">(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="o">)</span><span class="s2">"</span></code></pre></figure>
+
+<p>설치가 완료되었다면, 터미널에 <code class="language-plaintext highlighter-rouge">which brew</code> 명령어를 통해 설치 경로를 확인한다.<br>
+M1 유저의 경우 아래와 같이 나왔다면 정상적으로 설치 된 것이다.<br>
+설치 후 <code class="language-plaintext highlighter-rouge">[command] + q</code>를 통해 터미널을 완전히 껐다 켜야 한다.</p>
+
+<div class="language-s highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">homebrew</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">brew</span><span class="w">
+</span></code></pre></div></div>
+
+<p>만약 설치 후 homebrew가 몇 가지 command를 실시하라고 할 수도 있는데,<br>
+그럴 경우에만 아래의 코드들을 차례로 실행해주자.</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">echo "eval $</span><span class="o">(</span>/opt/homebrew/bin/brew shellenv<span class="o">)</span><span class="s2">" &gt;&gt; ~/.zprofile
+</span><span class="gp">eval $</span><span class="s2">(/opt/homebrew/bin/brew shellenv)</span></code></pre></figure>
+
+<p style="font-weight:600; font-size: 1.2rem"><br><br>[STEP 2. Ruby 와 Jekyll 설치하기]</p>
+
+<p>Ruby를 철치하기에 앞서 Ruby Manager를 설치해야 한다.<br>
+Ruby Manager는 Ruby의 버전관리를 위한 것들로 여러 종류가 있다. RVM, rbenv, asdf, chruby 등등. 그러나 서로 호환이 되지 않아 한 가지만 설치해야 한다. Jekyll 깃블로그를 열고 싶은데 Ruby 설치에서만 여러번 좌절해본 결과, chruby라는 놈이 나를 ERROR의 굴레로부터 벗어나게 해주었기 때문에 본 포스팅은 chruby를 기준으로 한다.</p>
+
+<p>그 전에 다른 ruby managers가 설치되어 있는지 확인해보자.</p>
+
+<div class="language-s highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rvm</span><span class="w"> </span><span class="n">help</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-s highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rbenv</span><span class="w"> </span><span class="n">help</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-s highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">asdf</span><span class="w"> </span><span class="o">--</span><span class="n">help</span><span class="w">
+</span></code></pre></div></div>
+
+<p>이 Jobobdev 블로그 주인처럼 자신이 초보라면, 깔끔하게 기존의 것들을 지우고 아래의 chruby 가이드를 따르길 권장한다.</p>
+
+<p><span style="font-weight:500; font-size: 1.1rem">아래의 명령어를 통해 chruby와 Ruby를 설치한다.</span></p>
+
+<div class="language-s highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">brew</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">chruby</span><span class="w"> </span><span class="n">ruby</span><span class="o">-</span><span class="n">install</span><span class="w">
+</span></code></pre></div></div>
+
+<p>설치가 완료 되었다면 차례대로 아래의 명령어들을 실행해주자.</p>
+
+<p><span style="font-weight:500; font-size: 1.1rem">M1 Mac</span></p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">echo</span> <span class="s">"source /opt/homebrew/opt/chruby/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="p">.</span><span class="n">zshrc</span>
+<span class="n">echo</span> <span class="s">"source /opt/homebrew/opt/chruby/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="p">.</span><span class="n">zshrc</span>
+<span class="n">echo</span> <span class="s">"chruby ruby-3.1.1"</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="p">.</span><span class="n">zshrc</span>
+</code></pre></div></div>
+
+<p><span style="font-weight:500; font-size: 1.1rem">혹시 Intel Mac 이라면</span></p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">echo</span> <span class="s">"source /usr/local/share/chruby/chruby.sh"</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="p">.</span><span class="n">zshrc</span>
+<span class="n">echo</span> <span class="s">"source /usr/local/share/chruby/auto.sh"</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="p">.</span><span class="n">zshrc</span>
+<span class="n">echo</span> <span class="s">"chruby ruby-3.1.1"</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="p">.</span><span class="n">zshrc</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">[command] + q</code>로 Terminal을 재부팅 후 잘 설치 되었는지 버전을 확인하자.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby -v
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">ruby 3.1.1p18</code> 버전 이상이면 문제 없다.</p>
+
+<p>이제 Jekyll 차례이다.<br>
+터미널에 아래의 명령어로 <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>을 설치한다.</p>
+
+<div class="language-s highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gem</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">bundler</span><span class="w"> </span><span class="n">jekyll</span><span class="w">
+</span></code></pre></div></div>
+
+<p>설치가 완료 되었다면, 다음으로 넘어가보자.</p>
+
+<p style="font-weight:600; font-size: 1.2rem"><br><br>[STEP 3. Jekyll theme fork하고 레포지토리 이름 바꾸기]</p>
+
+<p>Github는 사용자들의 github page를 이용한 블로그 제작을 위해 몇 가지 테마를 제공하지만<br>
+성에 차지 않으므로, Jekyll theme을 다운받아 사용할 것이다.</p>
+
+<p>Github의 <code class="language-plaintext highlighter-rouge">username.github.io</code> Repository를 먼저 생성한 후 Jekyll theme repository를 자신의 repository로 clone하는 방법도 있지만, 항상 문제가 발생했으므로 훨씬 쉬운 방법을 소개하고자 한다.</p>
+
+<p>먼저, 아래의 사이트들 중에서 마음에 드는 Jekyll 테마를 고른다.</p>
+
+<ul>
+  <li><a href="https://github.com/topics/jekyll-theme" target="_blank" rel="noopener noreferrer">GitHub.com #jekyll-theme repos</a></li>
+  <li><a href="https://jamstackthemes.dev/ssg/jekyll/" target="_blank" rel="noopener noreferrer">jamstackthemes.dev</a></li>
+  <li><a href="http://jekyllthemes.org/" target="_blank" rel="noopener noreferrer">jekyllthemes.org</a></li>
+  <li><a href="https://jekyllthemes.io/" target="_blank" rel="noopener noreferrer">jekyllthemes.io</a></li>
+  <li><a href="https://jekyll-themes.com/" target="_blank" rel="noopener noreferrer">jekyll-themes.com</a></li>
+</ul>
+
+<p>사이트마다 차이가 있지만, ‘다운로드’ 혹은 ‘Github’, ‘Homepage’ 등의 버튼을 통해 테마의 repository로 이동한다.</p>
+
+<p>이젠 내가 적용한 <code class="language-plaintext highlighter-rouge">'al-folio'</code>테마 제작자의 방법을 따라할 것이다.<br>
+<strong><em>(각자의 테마 제작자가 README.md에 설명해놓은 절차를 그대로 따르는 것을 매우매우 추천한다.)</em></strong></p>
+
+<ul>
+  <li>테마의 Github repository에서 자신의 <code class="language-plaintext highlighter-rouge">username.github.io</code>로 fork 한다.</li>
+</ul>
+
+<div class="row mt-3">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/al-folio-fork-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/al-folio-fork-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/al-folio-fork-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/al-folio-fork.png">
+
+  </picture>
+
+</figure>
+
+</div>
+<div class="row mt-3">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/fork-to-my-repo-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/fork-to-my-repo-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/fork-to-my-repo-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/fork-to-my-repo.png">
+
+  </picture>
+
+</figure>
+
+</div>
+
+<ul>
+  <li>자신의 gitblog 프로젝트를 저장하고자 하는 폴더의 경로로 이동 후 jekyll을 설치한다.</li>
+</ul>
+
+<div class="language-s highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cd</span><span class="w"> </span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">myname</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">myfolder</span><span class="o">/</span><span class="w">
+</span><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">github.com</span><span class="o">/</span><span class="n">username</span><span class="o">/</span><span class="n">username.github.io.git</span><span class="w">
+</span><span class="n">cd</span><span class="w"> </span><span class="o">&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">repo</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span><span class="w">
+</span><span class="n">bundle</span><span class="w"> </span><span class="n">install</span><span class="w">
+</span><span class="n">bundle</span><span class="w"> </span><span class="n">exec</span><span class="w"> </span><span class="n">jekyll</span><span class="w"> </span><span class="n">serve</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>모든 명령어가 문제 없이 실행 되었다면 마지막 명령어 이후 local server를 통해 자신의 블로그를 미리 볼 수 있다.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-jekyll" data-lang="jekyll">AutoPages: Disabled/Not configured in site.config.
+Pagination: Complete, processed 1 pagination page(s)
+Jekyll Diagrams: Command Not Found: mmdc
+done in 0.952 seconds.
+Auto-regeneration: enabled for '/jobobdev.github.io'
+Server address: http://127.0.0.1:4000
+Server running... press ctrl-c to stop.</code></pre></figure>
+
+<p style="font-weight:600; font-size: 1.2rem"><br><br>[STEP 4. 블로그 호스팅 하기]</p>
+<p>지금 단계까지 문제 없지 잘 진행했다면, 이제 블로그를 자신의 것으로 만든 후 호스팅하는 것만 남았다!
+아직 나 역시 그 단계를 진행중이므로 더 많은 걸 소개할 순 없지만, 당장 로컬에서 말고 실제로 자신의 github page에 블로그 페이지가 올라간 것을 확인하고 싶을 것이기 때문에 빠르게 아래의 단계를 실행해보자.</p>
+
+<ul>
+  <li>먼저, username.github.io 폴더의 _config.yml 파일을 열고 기본적인 정보들을 수정한다.</li>
+  <li>아래의 사진처럼, <code class="language-plaintext highlighter-rouge">baseurl</code>은 비워두고 <code class="language-plaintext highlighter-rouge">url</code>에 자신의 github page 주소를 넣어준다.</li>
+</ul>
+<div class="row mt-3">
+        <figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/config-edit-first-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/config-edit-first-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/config-edit-first-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/config-edit-first.png">
+
+  </picture>
+
+</figure>
+
+</div>
+<ul>
+  <li>그 다음 변경 사항들을 커밋하고 push해주면 자신의 github page 주소로 블로그가 호스팅 된 것을 확인할 수 있다.
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>cd [블로그 repository 경로]
+git add .
+git commit -m "test blog"
+git push
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>모든 단계를 잘 마무리 했다면 이제 편집과의 싸움이다!! 난 아직 싸우는 중…</strong></p>
+</article>
+</div>
+
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2022 Jobobdev  . 
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RSZSWG5GCN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-RSZSWG5GCN');
+  </script>
+  </body>
+</html>
+
